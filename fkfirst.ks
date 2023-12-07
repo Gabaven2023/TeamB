@@ -38,72 +38,62 @@
 
 
  ;背景画像の切り替え実行
- [bg storage=room.jpg time=4000]  ここの数字大きくしたら背景がゆっくり変わる
- 
- 背景が切り替わりましたね？  [l][cm]
+ [bg storage=room.jpg time=4000]  [l][cm]
 
 
 
 ;１人目のキャラクター登場
-[chara_new name="akane" storage="生物ちゃん1.png" jname="あかね"]
-[chara_show name="akane"]
-あかねが登場しました！[l][r]
+[chara_new name="seibutu" storage="生物ちゃん1.png" jname="生物ちゃん"]
+[chara_show name="seibutu"]
+生物ちゃんが登場しました！[l][r]
 
 ;２人目のキャラクター登場
-[chara_new name="yamato" storage="水くん1.png" jname="やまと"]
-[chara_show name="yamato"]
-やまとが登場しました！[l][r]
+[chara_new name="mizu" storage="水くん1.png" jname="水くん"]
+[chara_show name="mizu"]
+水くんが登場しました！[l][r]
 
 
-;あかねの表情を登録
-[chara_face name="akane" face="angry" storage="aangry.png"]
 
-表情を変更します[p]
-;あかねの表情の変更
-[chara_mod name="akane" face="angry"]
-
-表情を元に戻します[p]
-;あかねの表情を元に戻す
-[chara_mod name="akane" face="default"]
-
-;あかねを退場[p]
+;生物ちゃんを退場[p]
 [chara_hide name="akane" ]
 
-音楽を再生します[l][r]
-[playbgm storage=test.ogg]
 
-音楽が再生されましたね[l][r]
-次に音楽を停止します[l][r]
-[stopbgm]
-音楽の再生が止まりました[l][r]
 
-[l][r][r]
+地球温暖化対策でいいのは？[l][r][r]
 
-[link target=*select1]【１】選択肢　その１[endlink][r]
-[link target=*select2]【２】選択肢　その２[endlink][r]
+; [glink] 文字ボタンオブジェクトを出します。
+[glink x="320" y="200" width="400" text="発展途上国開発に投資する" target="*Part1" color="white"]
+[glink x="320" y="300" width="400" text="温室効果ガス削減に対して補助金を用意する" target="*Part2" color="white"]
 [s]
 
 *select1
 
-[cm]
 
-「選択肢１」がクリックされました[l]
-@jump target=*common
+*Part1
+発展選んだ[l][r][r]
 
-*select2
+; [glink] 文字ボタンオブジェクトを出します。
+[glink x="320" y="200" width="400" text="発展途上国開発に投資する" target="*Part3" color="white"]
+[glink x="320" y="300" width="400" text="温室効果ガス削減に対して補助金を用意する" target="*Part4" color="white"]
+[s]
 
-[cm]
 
-「選択肢２」がクリックされました[l]
+*Part2
+温室選んだ[l][r][r]
 
-@jump target=*common
+; [glink] 文字ボタンオブジェクトを出します。
+[glink x="320" y="200" width="400" text="発展途上国開発に投資する" target="*Part3" color="white"]
+[glink x="320" y="300" width="400" text="温室効果ガス削減に対して補助金を用意する" target="*Part4" color="white"]
+[s]
+
+
+
+
 
 
 *common
  ;背景画像の切り替え実行
- [bg storage=back.jpg time=4000]  ここの数字大きくしたら背景がゆっくり変わる
- 
- 背景が切り替わりましたね？  [l][cm]
+ [bg storage=back.jpg time=4000]  
 
 [cm]
 
