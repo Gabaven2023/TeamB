@@ -29,20 +29,14 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
-;akane
-[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
-;キャラクターの表情登録
-[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
-[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
-[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
-[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
-
-
-;yamato
-[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
 
 ;土ちゃん
-[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル6.png" jname="土ちゃん" ]
+[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
+;キャラクターの表情登録
+[chara_face name="土ちゃん" face="左向き" storage="chara/土ちゃん/ノーマル左向き.png"　jname="土ちゃん"]
+
+;生物ちゃん
+[chara_new  name="生物ちゃん"  storage="chara/生物ちゃん/ノーマル.png" jname="生物ちゃん" ]
 
 
 *selectinterest2
@@ -50,7 +44,39 @@
 [cm]
 「ぼちぼちです」がクリックされました[l][p]
 
+;背景画像の切り替え実行
+[bg storage=チョイス画面.jpg time=2000] 
+
+;１人目のキャラクター登場
 [chara_show  name="土ちゃん"  ]			
 #土ちゃん
 ぼちぼちなんだ～。[p]
+
+;2人目のキャラクター登場
+[chara_show  name="生物ちゃん"  ]
+
+;土ちゃんの表情の変更
+[chara_mod name="土ちゃん" face="左向き"]
+
+#生物ちゃん
+こんにちは。[p]
+私の名前は生物ちゃん。[p]
+興味持ってくれると嬉しいな！[p]
+
+#土ちゃん
+環境のクイズしようよ[p]
+
+#生物ちゃん
+いいね！[p]
+
+#土ちゃん
+じゃあいくよ！
+あなたは台風や洪水の備えのために食料などを備蓄しようと思いました。食料や水は最低10日分備蓄すればよい。○か×か。
+
+[glink  color="black"  storage="scene3-○.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest3"  ]
+[glink  color="black"  storage="scene3-×.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest4"  ]
+
+[s  ]
+
+			
 						
