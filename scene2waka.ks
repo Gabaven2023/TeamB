@@ -29,20 +29,14 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
-;akane
-[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
-;キャラクターの表情登録
-[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
-[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
-[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
-[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
-
-
-;yamato
-[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
 
 ;土ちゃん
-[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル6.png" jname="土ちゃん" ]
+[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
+;キャラクターの表情登録
+[chara_face name="土ちゃん" face="左向き" storage="chara/土ちゃん/ノーマル左向き.png"]
+
+;生物ちゃん
+[chara_new  name="生物ちゃん"  storage="chara/生物ちゃん/ノーマル.png" jname="生物ちゃん" ]
 
 
 *selectinterest1
@@ -56,4 +50,36 @@
 [chara_show  name="土ちゃん"  ]
 #土ちゃん
 わー。興味あるなんて、嬉しいなー。[p]
+;土ちゃんの表情の変更
+[chara_mod name="土ちゃん" face="左向き"]
+					
+;キャラクター登場
+[chara_show  name="生物ちゃん"  ]
+#生物ちゃん
+こんにちは。[p]
+私の名前は生物ちゃん。[p]
+これからよろしくね！[p]
+
+#土ちゃん
+よろしくな。[p]
+ところでクイズは好き？[p]
+わたしクイズができる人が好きなんだよね。[p]
+
+#生物ちゃん
+わたしも！！[p]
+
+#土ちゃん
+じゃあ問題出すよ[p]
+
+#生物ちゃん
+うん！！[p]
+
+#土ちゃん
+日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
+
+[link storage="scene2-600万.ks"]【１】600万トン[endlink][r]
+[link storage="scene2-300万.ks"]【２】300万トン[endlink][r]
+[s]
+
+
 					
