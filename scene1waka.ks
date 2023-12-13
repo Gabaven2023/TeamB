@@ -29,20 +29,14 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
-;akane
-[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
-;キャラクターの表情登録
-[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
-[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
-[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
-[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
-
-
-;yamato
-[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
 
 ;土ちゃん
-[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル6.png" jname="土ちゃん" ]
+[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
+;キャラクターの表情登録
+[chara_face name="土ちゃん" face="左向き" storage="chara/土ちゃん/ノーマル左向き.png"]
+
+;生物ちゃん
+[chara_new  name="生物ちゃん"  storage="chara/生物ちゃん/ノーマル.png" jname="生物ちゃん" ]
 
 #
 さて、ゲームが簡単に作れるというから、来てみたものの[p]
@@ -69,3 +63,5 @@
 
 [glink  color="blue"  storage="scene2.ks"  size="28"  x="360"  width="500"  y="150"  text="はい。興味あります"  target="*selectinterest1"  ]
 [glink  color="blue"  storage="scene3.ks"  size="28"  x="360"  width="500"  y="250"  text="ぼちぼちです"  target="*selectinterest2"  ]
+
+[s  ]
