@@ -62,6 +62,10 @@
 ;伊集院栄子の表情の変更
 [chara_mod name="伊集院栄子" face="左向き"]
 
+[chara_config talk_anim=up] 
+#伊集院栄子
+ん？なんなんだ・・・？[p]
+
 #B子
 こんにちは。[p]
 私の名前はB子。[p]
@@ -69,10 +73,34 @@
 
 [chara_config talk_anim=up] 
 #伊集院栄子
-しゅーやくんに相応しいのがどちらなのか、勝負よ！[p]
+おそいよ～Ｂ子～。[p]
 
 #B子
-かかってらっしゃい！！[p]
+ごめんごめん！[p]
+
+[chara_config talk_anim=up] 
+#伊集院栄子
+あのさ、私、好きなんだよね。あいつのこと。[p]
+
+#B子
+そっか・・・。[p]
+私もなんだ。[p]
+
+[chara_config talk_anim=up] 
+#伊集院栄子
+・・・やっぱりそうだったんだね[p]
+
+#B子
+ここからはライバルだね！[p]
+正々堂々と勝負しよう！[p]
+
+[chara_config talk_anim=up] 
+#伊集院栄子
+そうね！しゅーやくんにふさわしいのがどちらなのか、勝負よ！[p]
+
+#B子
+[p]
+かかってらっしゃい！[p]
 
 [chara_config talk_anim=none] 
 #伊集院栄子
