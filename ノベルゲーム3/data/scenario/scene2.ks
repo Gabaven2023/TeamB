@@ -36,7 +36,8 @@
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
 [chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
-
+;主人公
+[chara_new  name="主人公"  storage="chara//ノーマル.png" jname="主人公" ]
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 
@@ -47,38 +48,60 @@
 「はい。興味あります」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
+[bg storage=学際.jpg time=2000] 
 
 [chara_config brightness=20 talk_focus=brightness]
 [chara_config talk_anim=up] 
 [chara_show  name="伊集院栄子"  ]
-#伊集院栄子
-わー。興味あるなんて、嬉しいなー。[p]
 
-;伊集院栄子の表情の変更
-[chara_mod name="伊集院栄子" face="左向き"]
+#伊集院栄子
+やっぱり・・・目を見ればわかるわ。[p]
 
 [chara_config talk_anim=none] 				
 ;キャラクター登場
 [chara_show  name="B子"  ]
-#B子
-こんにちは。[p]
-私の名前はB子。[p]
-これからよろしくね！[p]
+[chara_show  name="主人公"  ]
+
+#主人公
+・・・[p]
 
 #伊集院栄子
-よろしくな。[p]
-ところでクイズは好き？[p]
-わたしクイズができる人が好きなんだよね。[p]
+私、諦めないから。[p]
+
+;背景画像の切り替え実行
+[bg storage=学際.jpg time=2000] 
+
 
 #B子
-わたしも！！[p]
+ごめんごめん！[p]
 
 #伊集院栄子
-じゃあ問題出すよ[p]
+おそいよ～B子[p]
 
 #B子
-うん！！[p]
+さてと、学際まわろうか！[p]
+
+#B子
+って、どうしたの？そんな神妙な顔して。[p]
+
+#伊集院栄子
+・・・やっぱりB子にはお見通しだね。[p]
+
+#B子
+何年友達やってると思ってんの。話して。[p]
+
+#伊集院栄子
+さっき主人公に会ってきたんだ[p]
+
+#B子
+・・・！！[p]
+
+#伊集院栄子
+あいつ、B子のことが好きなんだって。[p]
+
+#伊集院栄子
+・・・でも私、諦めきれない
+
 
 #伊集院栄子
 日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
