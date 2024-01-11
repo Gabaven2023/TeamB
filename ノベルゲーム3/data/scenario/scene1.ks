@@ -38,31 +38,41 @@
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 
+///場面転換　暗転
 
-#
-さて、ゲームが簡単に作れるというから、来てみたものの[p]
+どうして、どうしてこんなことになってしまったの・・・[p]
+オレだってこんなことしたくない[p]
+でも、あれは運命の出会いだったんだ[p]
 
-誰もいねぇじゃねぇか。[p]
-……[p]
-帰るか。。。[p]
+///場面転換　道端
 
+オレの名前は主人公。地元の大学に通う、ごく普通の大学生だ。[p]
+
+///キャラ表示4名分
+伊集院栄子[p]
+Ｂ子[p]
+モブ男[p]
+そしてオレ、主人公の4人は学部もサークルも同じでいつも一緒に過ごしてきた。[p]
+今年は4年生。最後の大学生活。仲間たちとの楽しい思い出を残したい。[p]
+オレたちなら最高の思い出が残せるはずだ！！！[p]
+
+///場面転換　暗転
 [font  size="30"   ]
-#?
-ちょっとまったーーーーー[p]
+・・・はずだった。[p]
 [resetfont  ]
 
-#
-誰だ！？[p]
+ネェ！[p]
+なんだ？[p]
 
 ;キャラクター登場
 [chara_show  name="伊集院栄子"  ]
 #伊集院栄子
-こんにちは。[p]
-私の名前は伊集院栄子。[p]
-環境に興味はある？？[p]
+私だって馬鹿じゃないのよ。あなたの目を見れば分かるわ。[p]
+だから、正直に言ってちょうだい。[p]
+あなた、Ｂ子のことが好きなんでしょ？[p]
 
-[glink  color="black"  storage="scene2.ks"  size="28"  x="360"  width="500"  y="150"  text="はい。興味あります"  target="*selectinterest1"  ]
-[glink  color="black"  storage="scene3.ks"  size="28"  x="360"  width="500"  y="250"  text="ぼちぼちです"  target="*selectinterest2"  ]
+[glink  color="black"  storage="scene2.ks"  size="28"  x="360"  width="500"  y="150"  text="はぁ？そんなことねぇし。"  target="*selectinterest1"  ]
+[glink  color="black"  storage="scene3.ks"  size="28"  x="360"  width="500"  y="250"  text="知ってたのかよ"  target="*selectinterest2"  ]
 
 [s  ]
 *selectinterest
