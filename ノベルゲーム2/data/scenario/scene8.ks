@@ -29,6 +29,17 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
+;akane
+[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
+;キャラクターの表情登録
+[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
+[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
+[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
+[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
+
+
+;yamato
+[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
 
 ;土ちゃん
 [chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
@@ -50,6 +61,8 @@
 [chara_show  name="土ちゃん"  ]
 #土ちゃん
 わー。興味あるなんて、嬉しいなー。[p]
+
+表情を変更します[p]
 ;土ちゃんの表情の変更
 [chara_mod name="土ちゃん" face="左向き"]
 					
@@ -77,9 +90,12 @@
 #土ちゃん
 日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
 
-[link storage="scene2-1waka.ks"]【１】300万トン[endlink][r]
-[link storage="scene2-2waka.ks"]【２】600万トン[endlink][r]
+[link storage="scene4.ks"]【１】600万トン[endlink][r]
+[link storage="scene5.ks"]【２】300万トン[endlink][r]
 [s]
 
-
-					
+#あかね
+ティラノスクリプトで作ったゲームはスマートフォンからでも遊べるよ！[p]
+アイフォーン、アンドロイドはもちろん。アイパッドとかのタブレットでも問題ないわ。[p]
+#
+おぉー。[p]

@@ -28,58 +28,62 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
+; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
+[chara_config talk_focus="brightness" memory="true" time="0"]
+
 ;このゲームで登場するキャラクターを宣言
-
-;土ちゃん
-[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
+;伊集院栄子
+[chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
-[chara_face name="土ちゃん" face="左向き" storage="chara/土ちゃん/ノーマル左向き.png"]
+[chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
 
-;生物ちゃん
-[chara_new  name="生物ちゃん"  storage="chara/生物ちゃん/ノーマル.png" jname="生物ちゃん" ]
-
+;B子
+[chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 
 *selectinterest1
 
 [cm]
+#
 「はい。興味あります」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
 [bg storage=背景時計.jpg time=2000] 
- 
-[chara_show  name="土ちゃん"  ]
-#土ちゃん
+
+[chara_config brightness=20 talk_focus=brightness]
+[chara_config talk_anim=up] 
+[chara_show  name="伊集院栄子"  ]
+#伊集院栄子
 わー。興味あるなんて、嬉しいなー。[p]
-;土ちゃんの表情の変更
-[chara_mod name="土ちゃん" face="左向き"]
-					
+
+;伊集院栄子の表情の変更
+[chara_mod name="伊集院栄子" face="左向き"]
+
+[chara_config talk_anim=none] 				
 ;キャラクター登場
-[chara_show  name="生物ちゃん"  ]
-#生物ちゃん
+[chara_show  name="B子"  ]
+#B子
 こんにちは。[p]
-私の名前は生物ちゃん。[p]
+私の名前はB子。[p]
 これからよろしくね！[p]
 
-#土ちゃん
+#伊集院栄子
 よろしくな。[p]
 ところでクイズは好き？[p]
 わたしクイズができる人が好きなんだよね。[p]
 
-#生物ちゃん
+#B子
 わたしも！！[p]
 
-#土ちゃん
+#伊集院栄子
 じゃあ問題出すよ[p]
 
-#生物ちゃん
+#B子
 うん！！[p]
 
-#土ちゃん
+#伊集院栄子
 日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
 
-[link storage="scene2-1waka.ks"]【１】300万トン[endlink][r]
-[link storage="scene2-2waka.ks"]【２】600万トン[endlink][r]
+[link storage="scene2-600万.ks"]【１】600万トン[endlink][r]
+[link storage="scene2-300万.ks"]【２】300万トン[endlink][r]
 [s]
 
-
-					
