@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="背景時計.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -40,31 +40,30 @@
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
-
-
-*selectinterest4
-
 [cm]
 #
-「×」がクリックされました[l][p]
+「300万」がクリックされました[l][p]
+
 
 ;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
+[bg storage=チョイス画面.jpg time=2000] 
 
 #伊集院栄子
-正解！！さすがB子！[p]
+不正解。６００万トンよ。[p]
 
 #B子
-でしょ！ふふふ[p] 
+、、、６００万、そんなに多かったなんて。[p]
 
 #伊集院栄子
-でも私、これだけじゃ諦めきれないから。[p]
+そうよ。私のあいつへの思いのようにね！[p]
 
 #B子
-わかってる。私たちライバルだけど、それ以上にトモダチだから[p]
-それを忘れないで欲しいな[p]
+・・・[p]
 
 #伊集院栄子
-当たり前じゃん。[p]
+まだまだよ。これからもっとちゃんと、私の本気、見せつけるんだから。[p]
 
-@jump storage="scene4.ks"
+#B子
+私だって、こんなもんじゃないから。[p]
+
+@jump storage="scene3-0.ks"

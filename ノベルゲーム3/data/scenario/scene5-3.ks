@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="背景時計.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -28,8 +28,7 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
-;このゲームで登場するキャラクターを宣言
-;伊集院栄子
+;このゲームで登場するキャラクターを宣言;伊集院栄子
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
 [chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
@@ -41,30 +40,24 @@
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
 
-
-*selectinterest4
-
 [cm]
-#
-「×」がクリックされました[l][p]
 
-;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
 
 #伊集院栄子
-正解！！さすがB子！[p]
+残念、、、[p]
+
 
 #B子
-でしょ！ふふふ[p] 
+排出はまだ多いけど、有効利用も進んでいるんだね[p]
 
 #伊集院栄子
-でも私、これだけじゃ諦めきれないから。[p]
+[p]
 
 #B子
-わかってる。私たちライバルだけど、それ以上にトモダチだから[p]
-それを忘れないで欲しいな[p]
+[p]
 
-#伊集院栄子
-当たり前じゃん。[p]
 
-@jump storage="scene4.ks"
+
+
+
+@jump storage="scene13.ks"

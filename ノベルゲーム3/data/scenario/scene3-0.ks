@@ -40,76 +40,71 @@
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
-*selectinterest2
+*selectinterest3
 
-[cm]
-#
-「ぼちぼちです」がクリックされました[l][p]
-
-;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
-
-
-[chara_config brightness=20 talk_focus=brightness]
-;１人目のキャラクター登場
-[chara_show  name="伊集院栄子"  ]			
-#伊集院栄子
-そっか・・・分かった。[p]
-
-;2人目のキャラクター登場
-[chara_show  name="B子"  ]
-
-;伊集院栄子の表情の変更
 [chara_mod name="伊集院栄子" face="左向き"]
 
 [chara_config talk_anim=up] 
 #伊集院栄子
-ん？なんなんだ・・・？[p]
+なぁ、主人公。[p]
 
 #B子
-こんにちは。[p]
-私の名前はB子。[p]
-今日は学祭に栄子と遊びに来たの！[p]
+どうしたんだよ。[p]
+
 
 [chara_config talk_anim=up] 
 #伊集院栄子
-おそいよ～Ｂ子～。[p]
+正直に答えてくれ。[p]
+お前、Ｂ子のこと、どう思ってるんだよ。[p]
 
 #B子
-ごめんごめん！[p]
+オレは。。。[p]
+Ｂ子のことが好きだ。[p]
+[chara_config talk_anim=up] 
+#伊集院栄子
+・・・やっぱり。そうだったのか[p]
+なぁ、主人公。[p]
+
+#B子
+どうしたんだよ。[p]
 
 [chara_config talk_anim=up] 
 #伊集院栄子
-あのさ、私、好きなんだよね。あいつのこと。[p]
+モテる男の条件って知ってるか。[p]
 
 #B子
-そっか・・・。[p]
-私もなんだ。[p]
+！？[p]
+なんだそれは・・・！[p]
 
 [chara_config talk_anim=up] 
 #伊集院栄子
-・・・やっぱりそうだったんだね[p]
+それは知識教養のあるジェントルマンだ。[p]
 
 #B子
-ここからはライバルだね！[p]
-正々堂々と勝負しよう！[p]
+知識教養のあるジェントルマン、か・・・。[p]
 
-[chara_config talk_anim=up] 
 #伊集院栄子
-そうね！しゅーやくんにふさわしいのがどちらなのか、勝負よ！[p]
+主人公。今のお前には、Ｂ子を落とせるほどの教養があると言えるか？[p]
 
 #B子
-[p]
-かかってらっしゃい！[p]
+・・・悔しいな。[p]
 
-[chara_config talk_anim=none] 
 #伊集院栄子
-じゃあいくよ！[p]
-あなたは台風や洪水の備えのために食料などを備蓄しようと思いました。食料や水は最低10日分備蓄すればよい。[r]○か×か。どっちでしょう！
+やはり。[p]
+オレが主人公を一人前のジェントルマンにしてやる。ついてこい。[p]
 
-[glink  color="black"  storage="scene3-○.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest3"  ]
-[glink  color="black"  storage="scene3-×.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest4"  ]
+#B子
+モブ男！心からの友よ！[p]
+
+#伊集院栄子
+フッ。容赦しねぇぞ。[p]
+早速問題だ！[p]
+
+#伊集院栄子
+世界の森林減少は深刻な問題だけど、すべての地域で森林が減少していると思う？？
+
+[glink  color="black"  storage="scene4-2.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest3"  ]
+[glink  color="black"  storage="scene4-1.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest4"  ]
 
 [s  ]
 
-			

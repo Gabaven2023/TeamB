@@ -67,4 +67,4 @@
 #伊集院栄子
 当たり前じゃん。[p]
 
-@jump storage="scene4.ks"
+@jump storage="scene3-0.ks"

@@ -27,6 +27,7 @@
 
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
+ 
 
 ;このゲームで登場するキャラクターを宣言
 ;伊集院栄子
@@ -37,34 +38,32 @@
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 
-; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
-[chara_config talk_focus="brightness" memory="true" time="0"]
 
-
-
-*selectinterest4
-
-[cm]
 #
-「×」がクリックされました[l][p]
+さて、ゲームが簡単に作れるというから、来てみたものの[p]
 
-;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
+誰もいねぇじゃねぇか。[p]
+……[p]
+帰るか。。。[p]
 
+[font  size="30"   ]
+#?
+ちょっとまったーーーーー[p]
+[resetfont  ]
+
+#
+誰だ！？[p]
+
+;キャラクター登場
+[chara_show  name="伊集院栄子"  ]
 #伊集院栄子
-正解！！さすがB子！[p]
+こんにちは。[p]
+私の名前は伊集院栄子。[p]
+環境に興味はある？？[p]
 
-#B子
-でしょ！ふふふ[p] 
+[glink  color="black"  storage="scene1-1.ks"  size="28"  x="360"  width="500"  y="150"  text="はい。興味あります"  target="*selectinterest1"  ]
+[glink  color="black"  storage="scene1-2.ks"  size="28"  x="360"  width="500"  y="250"  text="ぼちぼちです"  target="*selectinterest2"  ]
 
-#伊集院栄子
-でも私、これだけじゃ諦めきれないから。[p]
+[s  ]
+*selectinterest
 
-#B子
-わかってる。私たちライバルだけど、それ以上にトモダチだから[p]
-それを忘れないで欲しいな[p]
-
-#伊集院栄子
-当たり前じゃん。[p]
-
-@jump storage="scene4.ks"
