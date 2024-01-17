@@ -36,13 +36,26 @@
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
+;キャラクターの表情登録
+[chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
+
+;モブ男
+[chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
+;キャラクターの表情登録
+[chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
+
+;あなた
+[chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
+;キャラクターの表情登録
+[chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
+
 
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
 
 
-*selectinterest4
+*selectinterest4-1
 
 [cm]
 #
@@ -63,7 +76,8 @@
 #伊集院栄子
 問題[p]
 
-[link storage="scene5-1.ks"]不正解[endlink][r]
-[link storage="scene5-2.ks"]正解[endlink][r]
+[glink  color="black"  storage="scene5-1.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest5-1"  ]
+[glink  color="black"  storage="scene5-2.ks"  size="28"  x="360"  width="500"  y="250"  text="○"  target="*selectinterest5-2"  ]
+
 [s]
 

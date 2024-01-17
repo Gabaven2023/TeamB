@@ -39,6 +39,18 @@
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
+;キャラクターの表情登録
+[chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
+
+;モブ男
+[chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
+;キャラクターの表情登録
+[chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
+
+;あなた
+[chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
+;キャラクターの表情登録
+[chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
 
 *selectinterest1
 

@@ -29,28 +29,30 @@
 [chara_config ptext="chara_name_area"]
 
 ;このゲームで登場するキャラクターを宣言
-;akane
-[chara_new  name="akane" storage="chara/akane/normal.png" jname="あかね"  ]
+;伊集院栄子
+[chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
-[chara_face name="akane" face="angry" storage="chara/akane/angry.png"]
-[chara_face name="akane" face="doki" storage="chara/akane/doki.png"]
-[chara_face name="akane" face="happy" storage="chara/akane/happy.png"]
-[chara_face name="akane" face="sad" storage="chara/akane/sad.png"]
+[chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
 
-
-;yamato
-[chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
-
-;土ちゃん
-[chara_new  name="土ちゃん"  storage="chara/土ちゃん/ノーマル.png" jname="土ちゃん" ]
+;B子
+[chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 ;キャラクターの表情登録
-[chara_face name="土ちゃん" face="左向き" storage="chara/土ちゃん/ノーマル左向き.png"]
+[chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
 
-;生物ちゃん
-[chara_new  name="生物ちゃん"  storage="chara/生物ちゃん/ノーマル.png" jname="生物ちゃん" ]
+;モブ男
+[chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
+;キャラクターの表情登録
+[chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
 
+;あなた
+[chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
+;キャラクターの表情登録
+[chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
 
-*selectinterest1
+; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
+[chara_config talk_focus="brightness" memory="true" time="0"]
+
+*selectinterest7
 
 [cm]
 「はい。興味あります」がクリックされました[l][p]
@@ -90,12 +92,4 @@
 #土ちゃん
 日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
 
-[link storage="scene4.ks"]【１】600万トン[endlink][r]
-[link storage="scene5.ks"]【２】300万トン[endlink][r]
-[s]
-
-#あかね
-ティラノスクリプトで作ったゲームはスマートフォンからでも遊べるよ！[p]
-アイフォーン、アンドロイドはもちろん。アイパッドとかのタブレットでも問題ないわ。[p]
-#
-おぉー。[p]
+@jump storage="title.ks"
