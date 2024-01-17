@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="部屋.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
