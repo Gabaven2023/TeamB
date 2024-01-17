@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="部屋.png" time="100"]
+[bg storage="夕焼け.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -54,7 +54,8 @@
 
 *selectinterest3
 
-[chara_hide_all]
+;背景画像の切り替え実行
+[bg storage=部屋.png time=2000] 
 
 ;キャラクター登場
 [chara_show  name="モブ男"  face=左向き ]
