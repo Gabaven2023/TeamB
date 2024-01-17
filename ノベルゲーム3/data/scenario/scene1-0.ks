@@ -81,16 +81,27 @@
 ～これからあなたは恋愛バトルを繰り広げる主人公となる～
 [l][cm]
 
-
-;背景画像の切り替え実行  場面転換　暗転
-[bg storage=暗転.png time=2000] 
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 1000"]
+[bg time=" 0" storage="暗転.png"]
+[wait time="1000"]
+[mask_off time=" 1000" wait="true"]
 
 どうして、どうしてこんなことになってしまったの・・・[p]
 オレだってこんなことしたくない[p]
 でも、あれは運命の出会いだったんだ[p]
 
-;背景画像の切り替え実行  場面転換　道端　
-[bg storage=道端.png time=2000] 
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 1000"]
+[bg time=" 0" storage="道端.png"]
+[wait time="1000"]
+[mask_off time=" 1000" wait="true"]
+
+
 
 #あなた
 オレの名前は[emb exp=sf.yourname]。地元の大学に通う、ごく普通の大学生だ。[p]
@@ -137,9 +148,9 @@
 
 [chara_hide_all time=1000 wait=true]
 
-;背景画像の切り替え実行  場面転換　暗転
+;背景画像の切り替え実行
 [bg storage=暗転.png time=2000] 
-[font  size="30"   ]
+
 
 #
 ・・・はずだった。[p]

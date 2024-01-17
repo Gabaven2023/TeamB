@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="部屋.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -61,23 +61,29 @@
 #
 「×」がクリックされました[l][p]
 
-;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
 
-#伊集院栄子
+#モブ男
 なんだ、以外と知ってるじゃん。[p]
 
-#B子
+[chara_config talk_anim=up]
+#あなた
 やったぁ！オレはすでにＢ子にふさわしい男ということかー！[p] 
 
-#伊集院栄子
+#モブ男
 この程度でジェントルマンになった気になるなよ！次だ！[p]
 
-#伊集院栄子
-問題[p]
+[chara_config talk_anim=none]
+#
 
-[glink  color="black"  storage="scene5-1.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest5-1"  ]
-[glink  color="black"  storage="scene5-2.ks"  size="28"  x="360"  width="500"  y="250"  text="○"  target="*selectinterest5-2"  ]
+;背景画像の切り替え実行
+[bg storage=バトル.png time=2000] 
+
+
+#
+家庭部門のCO2排出構成として、正しいものはどれでしょうか。[p]
+
+[glink  color="black"  storage="scene5-1.ks"  size="28"  x="360"  width="500"  y="150"  text="①冷房のために排出されるCO2が全体の約１／４"  target="*selectinterest5-1"  ]
+[glink  color="black"  storage="scene5-2.ks"  size="28"  x="360"  width="500"  y="250"  text="②暖房のために排出されるCO2が全体の約１／４"  target="*selectinterest5-2"  ]
 
 [s]
 

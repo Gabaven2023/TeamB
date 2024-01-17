@@ -54,8 +54,8 @@
 
 *selectinterest3
 
-;背景画像の切り替え実行
-[bg storage=部屋.png time=2000] 
+
+ 
 
 ;キャラクター登場
 [chara_show  name="モブ男"  face=左向き ]
@@ -123,7 +123,7 @@
 早速問題だ！[p]
 
 #
-世界の森林減少は深刻な問題だけど、すべての地域で森林が減少していると思う？？
+世界の森林減少は深刻な問題ですが、すべての地域で森林が減少していると思いますか？？
 
 [glink  color="black"  storage="scene4-1.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest4-1"  ]
 [glink  color="black"  storage="scene4-2.ks"  size="28"  x="360"  width="500"  y="250"  text="○"  target="*selectinterest4-2"  ]

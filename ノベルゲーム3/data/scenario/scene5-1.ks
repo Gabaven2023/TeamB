@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="バトル.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -58,14 +58,26 @@
 
 [cm]
 #
-「×」がクリックされました[l][p]
+「①冷房のために排出されるCO2が全体の約１／４」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
+[bg storage=暗転.png time=2000] 
+
 #モブ男
 不正解だ。[p]
+
 #あなた
 なん。。。だと。。。[p]
+
+#モブ男
+家庭部門からのco2排出の割合は、暖房・給湯がそれぞれ1/4程度、照明・家電製品が1/2程度、冷房は3%程度なのだ！！[p]
+
+#あなた
+そうなのか・・・[p]
+
+;背景画像の切り替え実行
+[bg storage=夕焼け.png time=2000] 
+
 #モブ男
 すぐに調子に乗るからそんなことになるんだ。[p]
 #モブ男
@@ -73,16 +85,52 @@
 #あなた
 確かにそうかもしれない！悔しいぜ[p]
 #モブ男
-心配するな。オレが///キャラ名///にもう一度チャンスをくれてやる！[p]
+心配するな。オレが[emb exp=sf.yourname]にもう一度チャンスをくれてやる！[p]
+
+; [keyframe]～[endkeyframe] キーフレームアニメーション my_anim2 を定義します。
+[keyframe name=my_anim2]
+; [frame] アニメーション25%完了時には右に1px動いている……ということを定義します。
+[frame p=25% x=25 ]
+; [frame] アニメーション25%完了時には左に1px動いている……ということを定義します。
+[frame p=25% x=-25]
+[endkeyframe]
+
+; [kanim] countパラメータを指定した例。
+[kanim name=あなた keyframe=my_anim2 time=700 count=3]
 #あなた
 うおおおおおおおお！[p]
+[wa]
+[stop_kanim name=あなた]
+ 
+
+
 #モブ男
 クイズが出来る男は必ずモテる！！[p]
+
+
+; [kanim] countパラメータを指定した例。
+[kanim name=あなた keyframe=my_anim2 time=700 count=3]
 #あなた
 うおおおおおおおお！[p]
+[wa]
+[stop_kanim name=あなた]
+
 #あなた（心の声）
 次のクイズに正解して、B子を射止めるクールガイになるぞ！[p]
 #モブ男
 クイズだ！[p]
+
+#
+
+;背景画像の切り替え実行
+[bg storage=バトル.png time=2000] 
+
+#
+白熱電球から電球型LEDランプに変えることによって、電力消費量を何％削減することができるでしょうか。[p]
+
+[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="150"  text="①80%強"  target="*selectinterest6"  ]
+[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="250"  text="②50%程度"  target="*selectinterest7"  ]
+
+[s]
 
 
