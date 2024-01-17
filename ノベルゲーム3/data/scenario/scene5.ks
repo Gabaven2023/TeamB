@@ -49,7 +49,7 @@
 
 
 #伊集院栄子
-じゃあ次の問題出すよ[p]
+fjakwovlkwavlkenavnoanvonvoiarnepvneaoinvoiaeよ[p]
 
 #B子
 今度hjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh[p]
