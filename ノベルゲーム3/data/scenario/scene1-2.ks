@@ -28,6 +28,9 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
+; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
+[chara_config talk_focus="brightness" memory="true" time="0"]
+
 ;このゲームで登場するキャラクターを宣言
 ;伊集院栄子
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
@@ -49,8 +52,7 @@
 ;キャラクターの表情登録
 [chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
 
-; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
-[chara_config talk_focus="brightness" memory="true" time="0"]
+
 
 *selectinterest2
 
@@ -64,17 +66,16 @@
 
 [chara_config brightness=20 talk_focus=brightness]
 ;１人目のキャラクター登場
-[chara_show  name="伊集院栄子"  ]			
+[chara_show  name="伊集院栄子"  ]
+
 #伊集院栄子
 そっか・・・分かった。[p]
 
-;2人目のキャラクター登場
+
+[chara_config talk_anim=none] 				
+;キャラクター登場
 [chara_show  name="B子"  ]
 
-;伊集院栄子の表情の変更
-[chara_mod name="伊集院栄子" face="左向き"]
-
-[chara_config talk_anim=up] 
 #伊集院栄子
 ん？なんなんだ・・・？[p]
 
@@ -111,7 +112,6 @@
 そうね！[emb exp=sf.yourname]にふさわしいのがどちらなのか、勝負よ！[p]
 
 #B子
-[p]
 かかってらっしゃい！[p]
 
 [chara_config talk_anim=none] 
