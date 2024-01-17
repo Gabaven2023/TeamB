@@ -76,7 +76,14 @@
 私だって、こんなもんじゃないから。[p]
 
 #
-
 [chara_hide_all]
+
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 500"]
+[bg time=" 0" storage="部屋.png"]
+[wait time="1000"]
+[mask_off time=" 500" wait="true"]
 
 @jump storage="scene3-0.ks"

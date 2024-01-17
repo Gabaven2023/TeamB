@@ -74,7 +74,14 @@
 私、諦めないから。[p]
 
 ;背景画像の切り替え実行　場面転換、夕焼け、伊集院栄子とＢ子のみ
-[bg storage=夕焼け.png time=2000]
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 500"]
+[bg time=" 0" storage="夕焼け.png"]
+[wait time="1000"]
+[mask_off time=" 500" wait="true"]
+
 
 [chara_config brightness=20 talk_focus=brightness]
 ;キャラクター登場
