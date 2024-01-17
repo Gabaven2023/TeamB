@@ -89,4 +89,7 @@
 #伊集院栄子
 Ｂ子はやっぱり最高のズッ友よ！[p]
 
+
+#
+[chara_hide_all]
 @jump storage="scene3-0.ks"
