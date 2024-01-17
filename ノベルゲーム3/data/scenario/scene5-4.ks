@@ -60,4 +60,4 @@
 
 
 
-@jump storage="scene12.ks"
+@jump storage="scene6.ks"

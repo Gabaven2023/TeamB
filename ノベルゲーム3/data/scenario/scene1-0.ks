@@ -29,6 +29,7 @@
 [chara_config ptext="chara_name_area"]
  
 
+
 ;このゲームで登場するキャラクターを宣言
 ;伊集院栄子
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
@@ -37,32 +38,128 @@
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
+;キャラクターの表情登録
+[chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
 
+;モブ男
+[chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
+;キャラクターの表情登録
+[chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
+
+;あなた
+[chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
+;キャラクターの表情登録
+[chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
+
+
+
+主人公の名前を設定してください[p]
+
+;テキストボックスの表示
+
+*show_input_yourname
+
+[edit left=500 top=150 name="sf.yourname"][r]
+
+[locate x=500 y=200]
+[button target="*sbm_name" name=button_name_kettei graphic="kettei.gif" ]
+
+[s]
+
+*sbm_name
+[commit]
+[cm]
+
+;名前が未入力の場合
+[if exp="sf.yourname==''"]
+    名前が未入力です?[l]
+    @jump target=*show_input_yourname
+[endif]
+
+[emb exp=sf.yourname]さん。[r]
+～これからあなたは恋愛バトルを繰り広げる主人公となる～
+[l][cm]
+
+
+;背景画像の切り替え実行  場面転換　暗転
+[bg storage=暗転.png time=2000] 
+
+どうして、どうしてこんなことになってしまったの・・・[p]
+オレだってこんなことしたくない[p]
+でも、あれは運命の出会いだったんだ[p]
+
+;背景画像の切り替え実行  場面転換　道端　///道端の画像がなかったからとりあえず他のを入れてます
+[bg storage=夕焼け.png time=2000] 
+
+#あなた
+オレの名前は[emb exp=sf.yourname]。地元の大学に通う、ごく普通の大学生だ。[p]
 
 #
-さて、ゲームが簡単に作れるというから、来てみたものの[p]
+;キャラ表示4名分
+;1人目のキャラクター登場
+[chara_config talk_anim=none] 
+[chara_new name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"  jname="伊集院栄子"]
+[chara_show name="伊集院栄子"]
 
-誰もいねぇじゃねぇか。[p]
-……[p]
-帰るか。。。[p]
+#
+伊集院栄子[p]
 
+;2人目のキャラクター登場
+[chara_config talk_anim=none] 
+[chara_new name="B子"  storage="chara/B子/ノーマル.png"  jname="B子"]
+[chara_show name="B子"]
+
+#
+Ｂ子[p]
+
+;3人目のキャラクター登場
+[chara_config talk_anim=none] 
+[chara_new name="モブ男" storage="chara/モブ男/ノーマル左向き.png" jname="モブ男"]
+[chara_show name="モブ男"]
+
+#
+モブ男[p]
+
+;4人目のキャラクター登場
+[chara_config talk_anim=none] 
+[chara_new name="あなた" storage="chara/あなた/ノーマル.png" jname="あなた"]
+[chara_show name="あなた"]
+
+#あなた
+そしてオレ。[r]
+オレ達は学部もサークルも同じでいつも一緒に過ごしてきた。[p]
+今年は4年生。最後の大学生活。[r]
+仲間たちとの楽しい思い出を残したい。[p]
+オレたちなら最高の思い出が残せるはずだ！！！[p]
+
+#
+
+[chara_hide_all time=1000 wait=true]
+
+;背景画像の切り替え実行  場面転換　暗転
+[bg storage=暗転.png time=2000] 
 [font  size="30"   ]
-#?
-ちょっとまったーーーーー[p]
+
+#
+・・・はずだった。[p]
 [resetfont  ]
 
 #
-誰だ！？[p]
+ネェ！[p]
+
+#
+なんだ？[p]
 
 ;キャラクター登場
 [chara_show  name="伊集院栄子"  ]
-#伊集院栄子
-こんにちは。[p]
-私の名前は伊集院栄子。[p]
-環境に興味はある？？[p]
 
-[glink  color="black"  storage="scene1-1.ks"  size="28"  x="360"  width="500"  y="150"  text="はい。興味あります"  target="*selectinterest1"  ]
-[glink  color="black"  storage="scene1-2.ks"  size="28"  x="360"  width="500"  y="250"  text="ぼちぼちです"  target="*selectinterest2"  ]
+#伊集院栄子
+私だって馬鹿じゃないのよ。あなたの目を見れば分かるわ。[p]
+だから、正直に言ってちょうだい。[p]
+あなた、Ｂ子のことが好きなんでしょ？[p]
+
+[glink  color="black"  storage="scene1-1.ks"  size="28"  x="360"  width="500"  y="150"  text="はぁ？そんなことねぇし。"  target="*selectinterest1"  ]
+[glink  color="black"  storage="scene1-2.ks"  size="28"  x="360"  width="500"  y="250"  text="知ってたのかよ"  target="*selectinterest2"  ]
 
 [s  ]
 *selectinterest
