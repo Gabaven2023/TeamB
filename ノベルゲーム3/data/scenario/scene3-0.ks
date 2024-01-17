@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="部屋.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -54,69 +54,78 @@
 
 *selectinterest3
 
-[chara_mod name="伊集院栄子" face="左向き"]
+[chara_hide_all]
+
+;キャラクター登場
+[chara_show  name="モブ男"  face=左向き ]
+;キャラクター登場
+[chara_show  name="あなた"  ]
 
 [chara_config talk_anim=up] 
-#伊集院栄子
+#モブ男
 なぁ、[emb exp=sf.yourname]。[p]
 
-#B子
+[chara_config talk_anim=none] 
+#あなた
 どうしたんだよ。[p]
 
-
-[chara_config talk_anim=up] 
-#伊集院栄子
+#モブ男
 正直に答えてくれ。[p]
 お前、Ｂ子のこと、どう思ってるんだよ。[p]
 
-#B子
+[chara_config talk_anim=up] 
+#あなた
 オレは。。。[p]
 Ｂ子のことが好きだ。[p]
-[chara_config talk_anim=up] 
-#伊集院栄子
-・・・やっぱり。そうだったのか[p]
-なぁ、主人公。[p]
 
-#B子
+[chara_config talk_anim=none] 
+#モブ男
+・・・やっぱり。そうだったのか[p]
+なぁ、[emb exp=sf.yourname]。[p]
+
+#あなた
 どうしたんだよ。[p]
 
-[chara_config talk_anim=up] 
-#伊集院栄子
+ 
+#モブ男
 モテる男の条件って知ってるか。[p]
 
-#B子
+[chara_config talk_anim=up]
+#あなた
 ！？[p]
 なんだそれは・・・！[p]
 
-[chara_config talk_anim=up] 
-#伊集院栄子
+[chara_config talk_anim=none] 
+#モブ男
 それは知識教養のあるジェントルマンだ。[p]
 
-#B子
+#あなた
 知識教養のあるジェントルマン、か・・・。[p]
 
-#伊集院栄子
-主人公。今のお前には、Ｂ子を落とせるほどの教養があると言えるか？[p]
+#モブ男
+[emb exp=sf.yourname]。今のお前には、Ｂ子を落とせるほどの教養があると言えるか？[p]
 
-#B子
+#あなた
 ・・・悔しいな。[p]
 
-#伊集院栄子
+#モブ男
 やはり。[p]
 オレが主人公を一人前のジェントルマンにしてやる。ついてこい。[p]
 
-#B子
+[chara_config talk_anim=up]
+#あなた
 モブ男！心からの友よ！[p]
 
-#伊集院栄子
+[chara_config talk_anim=none]
+#モブ男
 フッ。容赦しねぇぞ。[p]
 早速問題だ！[p]
 
-#伊集院栄子
+#
 世界の森林減少は深刻な問題だけど、すべての地域で森林が減少していると思う？？
 
-[glink  color="black"  storage="scene4-1.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest4-1"  ]
-[glink  color="black"  storage="scene4-2.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest4-2"  ]
+[glink  color="black"  storage="scene4-1.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest4-1"  ]
+[glink  color="black"  storage="scene4-2.ks"  size="28"  x="360"  width="500"  y="250"  text="○"  target="*selectinterest4-2"  ]
 
 [s  ]
 
