@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="夕焼け.png" time="100"]
+[bg storage="バトル.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -74,5 +74,9 @@
 
 #B子
 私だって、こんなもんじゃないから。[p]
+
+#
+
+[chara_hide_all]
 
 @jump storage="scene3-0.ks"
