@@ -54,7 +54,8 @@
 
 *selectinterest3
 
-[chara_hide_all]
+;背景画像の切り替え実行
+[bg storage=部屋.png time=2000] 
 
 ;キャラクター登場
 [chara_show  name="モブ男"  face=左向き ]

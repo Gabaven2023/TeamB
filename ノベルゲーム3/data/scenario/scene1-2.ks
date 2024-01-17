@@ -34,8 +34,7 @@
 ;このゲームで登場するキャラクターを宣言
 ;伊集院栄子
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
-;キャラクターの表情登録
-[chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
+
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
@@ -61,7 +60,7 @@
 「知ってたのかよ」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
+[bg storage=暗転.png time=2000] 
 
 
 [chara_config brightness=20 talk_focus=brightness]
@@ -75,6 +74,9 @@
 [chara_config talk_anim=none] 				
 ;キャラクター登場
 [chara_show  name="B子"  ]
+
+;背景画像の切り替え実行　場面転換、道端、伊集院栄子とＢ子のみ
+[bg storage=道端.png time=2000]
 
 #伊集院栄子
 ん？なんなんだ・・・？[p]
@@ -113,6 +115,9 @@
 
 #B子
 かかってらっしゃい！[p]
+
+;背景画像の切り替え実行　場面転換、バトル、伊集院栄子とＢ子のみ
+[bg storage=バトル.png time=2000]
 
 [chara_config talk_anim=none] 
 #伊集院栄子

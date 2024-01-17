@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="道端.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -56,12 +56,12 @@
 
 *selectinterest4
 
+;背景画像の切り替え実行
+[bg storage=道端.png time=2000] 
+
 [cm]
 #
 「×」がクリックされました[l][p]
-
-;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
 
 #伊集院栄子
 正解！！さすがB子！[p]
@@ -78,5 +78,9 @@
 
 #伊集院栄子
 当たり前じゃん。[p]
+
+#
+
+[chara_hide_all]
 
 @jump storage="scene3-0.ks"
