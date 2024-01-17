@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="背景時計.jpg" time="100"]
+[bg storage="夕焼け.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -56,10 +56,7 @@
 #
 「300万トン」がクリックされました[l][p]
 
-
-;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
-
+[chara_config talk_anim=none]
 #伊集院栄子
 不正解。６００万トンよ。[p]
 
