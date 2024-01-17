@@ -117,7 +117,7 @@
 [chara_config talk_anim=none] 
 #伊集院栄子
 じゃあいくよ！[p]
-あなたは台風や洪水の備えのために食料などを備蓄しようと思いました。食料や水は最低10日分備蓄すればよい。[r]○か×か。どっちでしょう！
+あなたは台風や洪水の備えのために食料などを備蓄しようと思いました。食料や水は最低１０日分備蓄すればよい。[r]○か×か。どっちでしょう！
 
 [glink  color="black"  storage="scene2-3.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest3"  ]
 [glink  color="black"  storage="scene2-4.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest4"  ]
