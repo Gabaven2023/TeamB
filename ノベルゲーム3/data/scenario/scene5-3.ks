@@ -7,7 +7,6 @@
 [start_keyconfig]
 
 
-[bg storage="背景時計.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -51,25 +50,40 @@
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
-
+*selectinterest5-3
 [cm]
-#モブ男
-不正解だ
-#あなた
-悔しい、オレは悔しいよモブ男。
-#あなた
-こんなオレがＢ子に告白なんて・・・
-#モブ男
-何言ってるんだよ///キャラ名。上手くいくかなんて最後まで分からないだろ？
-#あなた
-モブ男・・・！
-#モブ男
-当たって砕けろ！お前が主人公だ！！
-#あなた
-よおおし！次のクイズに正解してＢ子に告白するぞ！
-#モブ男
-そうこなくっちゃ！容赦しねぇぞ！！
 
-問題
-選択肢　　正解　　６－０へ
-選択肢　　不正解　７ー０へ
+#
+「Energy, Sustainable, Goal」がクリックされました[l][p]
+
+;背景画像の切り替え実行
+[bg storage=夕焼け.png time=2000] 
+
+#モブ男
+不正解だ[p]
+
+#あなた
+悔しい、オレは悔しいよモブ男。[p]
+#あなた
+こんなオレがＢ子に告白なんて・・・[p]
+
+#モブ男
+何言ってるんだよ[emb exp=sf.yourname]。上手くいくかなんて最後まで分からないだろ？[p]
+#あなた
+モブ男・・・！[p]
+
+#モブ男
+当たって砕けろ！お前が主人公だ！！[p]
+
+#あなた
+よおおし！次のクイズに正解してＢ子に告白するぞ！[p]
+
+#モブ男
+そうこなくっちゃ！容赦しねぇぞ！！[p]
+
+地球温暖化対策に世界全体で取り組むことに関する会議の略称は？[r]
+
+[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="150"  text="COP"  target="*selectinterest6"  ]
+[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="250"  text="SDGs"  target="*selectinterest7"  ]
+
+[s]
