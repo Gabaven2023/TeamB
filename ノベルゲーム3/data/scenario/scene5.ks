@@ -49,10 +49,10 @@
 
 
 #伊集院栄子
-じゃあ次の問題出すよ[p]
+fjakwovlkwavlkenavnoanvonvoiarnepvneaoinvoiaeよ[p]
 
 #B子
-今度こそ正解する！[p]
+今度hjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh[p]
 
 #伊集院栄子
 世界の森林減少は深刻な問題だけど、すべての地域で森林が減少していると思う？？
