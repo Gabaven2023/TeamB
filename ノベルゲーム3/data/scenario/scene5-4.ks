@@ -42,6 +42,7 @@
 
 [cm]
 
+
 #モブ男	
 正解だ！！		
 #あなた	
@@ -62,4 +63,5 @@
 
 [glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest7"  ]
 [glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="〇"  target="*selectinterest6"  ]
+
 

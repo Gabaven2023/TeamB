@@ -1,0 +1,9 @@
+diff a/ノベルゲーム3/data/scenario/scene6.ks b/ノベルゲーム3/data/scenario/scene6.ks	(rejected hunks)
+@@ -55,7 +55,6 @@
+ *selectinterest6
+ 
+ [cm]
+-
+ #モブ男
+ ・・・正解だ。
+ #あなた

@@ -7,7 +7,6 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -59,33 +58,34 @@
 「○」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
-[bg storage=背景時計.jpg time=2000] 
+[bg storage=バトル.png time=2000] 
  
-#B子
+#あなた
 違うのか・・・[p]
 
-#伊集院栄子
+#モブ男
 南アメリカやアフリカなど、熱帯の森林を中心に減少しているけど、[p]
 アジア、ヨーロッパを中心とした森林は増加している国もあるんだ！[p]
 
-#B子
+#あなた
 そうだったのか。[p]
 
-#伊集院栄子
+#モブ男
 この今の時代、何時何が起きるか分からない。どんな時でもＢ子を守ってやれる男になるんだぞ。[p]
 
-#B子
+#あなた
 モブ男！[p]
 次だ！[p]
 
-#伊集院栄子
+#モブ男
 おう！[p]
 
-#伊集院栄子
-問題[p]
+#モブ男
+全世界で伸びている「ESG投資」のE, S, Gとは、それぞれ何の略？[r]
 
-[glink  color="black"  storage="scene5-3.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest5-3"  ]
-[glink  color="black"  storage="scene5-4.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinteres5-4"  ]
+[glink  color="black"  storage="scene5-3.ks"  size="28"  x="360"  width="500"  y="150"  text="Energy, Sustainable, Goal"  target="*selectinterest5-3"  ]
+[glink  color="black"  storage="scene5-4.ks"  size="28"  x="360"  width="500"  y="250"  text="Environment, Social, Governance"  target="*selectinterest5-4"  ]
+
 [s]
 
 

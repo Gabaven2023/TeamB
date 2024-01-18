@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="背景時計.jpg" time="100"]
+[bg storage="バトル.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -56,10 +56,7 @@
 #
 「300万トン」がクリックされました[l][p]
 
-
-;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
-
+[chara_config talk_anim=none]
 #伊集院栄子
 不正解。６００万トンよ。[p]
 
@@ -77,5 +74,16 @@
 
 #B子
 私だって、こんなもんじゃないから。[p]
+
+#
+[chara_hide_all]
+
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 500"]
+[bg time=" 0" storage="部屋.png"]
+[wait time="1000"]
+[mask_off time=" 500" wait="true"]
 
 @jump storage="scene3-0.ks"

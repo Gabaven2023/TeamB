@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="バトル.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -55,12 +55,9 @@
 *selectinterest6
 
 [cm]
-#
-「600万」がクリックされました[l][p]
-
 
 ;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
+[bg storage=夕焼け.png time=2000] 
 
 #伊集院栄子
 正解！！すごいじゃん！[p]
@@ -121,6 +118,17 @@
 
 #B子
 [p]
+
+#
+[chara_hide_all]
+
+; [mask]～[mask_off]
+; マスクしている間に画面を書き換え、
+; 1秒待った後にマスクを外します。
+[mask time=" 500"]
+[bg time=" 0" storage="ホーム画面.jpg"]
+[wait time="1000"]
+[mask_off time=" 500" wait="true"]
 
 @jump storage="title.ks"
 

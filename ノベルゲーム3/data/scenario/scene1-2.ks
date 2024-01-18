@@ -28,11 +28,13 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
+; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
+[chara_config talk_focus="brightness" memory="true" time="0"]
+
 ;このゲームで登場するキャラクターを宣言
 ;伊集院栄子
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
-;キャラクターの表情登録
-[chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
+
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
@@ -49,8 +51,7 @@
 ;キャラクターの表情登録
 [chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
 
-; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
-[chara_config talk_focus="brightness" memory="true" time="0"]
+
 
 *selectinterest2
 
@@ -59,22 +60,24 @@
 「知ってたのかよ」がクリックされました[l][p]
 
 ;背景画像の切り替え実行
-[bg storage=チョイス画面.jpg time=2000] 
+[bg storage=暗転.png time=2000] 
 
 
 [chara_config brightness=20 talk_focus=brightness]
 ;１人目のキャラクター登場
-[chara_show  name="伊集院栄子"  ]			
+[chara_show  name="伊集院栄子"  ]
+
 #伊集院栄子
 そっか・・・分かった。[p]
 
-;2人目のキャラクター登場
+
+[chara_config talk_anim=none] 				
+;キャラクター登場
 [chara_show  name="B子"  ]
 
-;伊集院栄子の表情の変更
-[chara_mod name="伊集院栄子" face="左向き"]
+;背景画像の切り替え実行　場面転換、道端、伊集院栄子とＢ子のみ
+[bg storage=道端.png time=2000]
 
-[chara_config talk_anim=up] 
 #伊集院栄子
 ん？なんなんだ・・・？[p]
 
@@ -83,14 +86,13 @@
 私の名前はB子。[p]
 今日は学祭に栄子と遊びに来たの！[p]
 
-[chara_config talk_anim=up] 
+
 #伊集院栄子
 おそいよ～Ｂ子～。[p]
 
 #B子
 ごめんごめん！[p]
 
-[chara_config talk_anim=up] 
 #伊集院栄子
 あのさ、私、好きなんだよね。あいつのこと。[p]
 
@@ -98,7 +100,6 @@
 そっか・・・。[p]
 私もなんだ。[p]
 
-[chara_config talk_anim=up] 
 #伊集院栄子
 ・・・やっぱりそうだったんだね[p]
 
@@ -111,8 +112,10 @@
 そうね！[emb exp=sf.yourname]にふさわしいのがどちらなのか、勝負よ！[p]
 
 #B子
-[p]
 かかってらっしゃい！[p]
+
+;背景画像の切り替え実行　場面転換、バトル、伊集院栄子とＢ子のみ
+[bg storage=バトル.png time=2000]
 
 [chara_config talk_anim=none] 
 #伊集院栄子
