@@ -82,7 +82,11 @@
 だから最後にひとつ、オレにクイズを出してくれないか。
 #モブ男
 。。。分かった。クイズだ！
+#モブ男
+地球温暖化が進むと、陸地が増えて水が減る？
 
-問題
-///選択肢不正解→７－０へ
-///選択肢正解→６－０へ
+
+[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest7"  ]
+[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest6"  ]
+
+
