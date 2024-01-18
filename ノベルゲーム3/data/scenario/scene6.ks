@@ -55,7 +55,6 @@
 *selectinterest6
 
 [cm]
-<<<<<<< HEAD
 #モブ男
 ・・・正解だ。
 #あなた
@@ -111,7 +110,6 @@
 ＧＡＭＥ　ＯＶＥＲ
 
 @jump storage="title.ks"
-=======
 #
 「600万」がクリックされました[l][p]
 
@@ -182,4 +180,3 @@
 @jump storage="title.ks"
 
 
->>>>>>> parent of b788f3c (シナリオ追加6)
