@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="背景時計.jpg" time="100"]
+[bg storage="道端.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -28,13 +28,13 @@
 ;上記で定義した領域がキャラクターの名前表示であることを宣言（これがないと#の部分でエラーになります）
 [chara_config ptext="chara_name_area"]
 
-;このゲームで登場するキャラクターを宣言;伊集院栄子
-[chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
+;このゲームで登場するキャラクターを宣言;モブ男
+[chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
 ;キャラクターの表情登録
-[chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
+[chara_face name="モブ男" face="ノーマル左向き" storage="chara/モブ男/ノーマル左向き.png"]
 
-;B子
-[chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
+;あなた
+[chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
 
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
@@ -42,22 +42,24 @@
 
 [cm]
 
-#伊集院栄子
-正解！！[p]
-廃プラスチックの排出量は824万トン（2021年）もあるんだけど、[r]
-その多くをリサイクルすることができているんだ！[p]
+#モブ男	
+正解だ！！		
+#あなた	
+よっしゃー！おめでとう。		
+#モブ男	
+聞いてくれ。おれは、本当はＢ子のことが好きなんだ。		
+#あなた	
+・・・そうだったのかー！！		
+#モブ男	
+だから次はオレもとっておきの問題をだす。		
+#あなた	
+おう！本気でかかってこい！		
+#モブ男	
+いくぞ！		
+#モブ男	
+いま、世界では森林が減っている。〇か×か？
 
-#B子
-排出はまだ多いけど、有効利用も進んでいるんだね[p]
 
-#伊集院栄子
-[p]
+[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest7"  ]
+[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="〇"  target="*selectinterest6"  ]
 
-#B子
-[p]
-
-
-
-
-
-@jump storage="scene6.ks"
