@@ -33,21 +33,34 @@
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
 [chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
+[chara_face name="伊集院栄子" face="上半身" storage="chara/伊集院栄子/ノーマル上半身.png"]
+[chara_face name="伊集院栄子" face="上半身左向き" storage="chara/伊集院栄子/ノーマル上半身左向き.png"]
+[chara_face name="伊集院栄子" face="神妙な表情" storage="chara/伊集院栄子/神妙な表情.png"]
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 ;キャラクターの表情登録
 [chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
+[chara_face name="B子" face="上半身" storage="chara/B子/ノーマル上半身.png"]
+[chara_face name="B子" face="上半身左向き" storage="chara/B子/ノーマル上半身左向き.png"]
+[chara_face name="B子" face="心配顔" storage="chara/B子/心配顔.png"]
+
 
 ;モブ男
 [chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
 ;キャラクターの表情登録
 [chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
+[chara_face name="モブ男" face="上半身" storage="chara/モブ男/ノーマル上半身.png"]
+[chara_face name="モブ男" face="上半身左向き" storage="chara/モブ男/ノーマル上半身左向き.png"]
+[chara_face name="モブ男" face="煽り顔" storage="chara/モブ男/煽り顔.png"]
 
 ;あなた
 [chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
 ;キャラクターの表情登録
 [chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
+[chara_face name="あなた" face="上半身" storage="chara/あなた/ノーマル上半身.png"]
+[chara_face name="あなた" face="上半身左向き" storage="chara/あなた/ノーマル上半身左向き.png"]
+[chara_face name="あなた" face="燃える顔" storage="chara/あなた/燃える顔.png"]
 
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
@@ -61,8 +74,24 @@
 
 #モブ男
 ・・・正解だ。[p]
+
+; [kanim] countパラメータを指定した例。
+[kanim name=あなた keyframe=my_anim2 time=700 count=3]
+; [keyframe]～[endkeyframe] キーフレームアニメーション my_anim2 を定義します。
+[keyframe name=my_anim2]
+; [frame] アニメーション25%完了時には右に1px動いている……ということを定義します。
+[frame p=25% x=25 ]
+; [frame] アニメーション25%完了時には左に1px動いている……ということを定義します。
+[frame p=25% x=-25]
+[endkeyframe]
+
+; [kanim] countパラメータを指定した例。
+[kanim name=あなた keyframe=my_anim2 time=700 count=3]
 #あなた
-しょおおおおおおあああああ！[p]
+しょおおおおおおあああああ！！[p]
+[wa]
+[stop_kanim name=あなた]
+
 #モブ男
 お前がそこまで環境クイズに詳しいとはな。[p]
 #あなた
@@ -74,40 +103,75 @@
 #あなた
 モブ男がオレをここまで連れてきてくれたんだろ？[p]
 #モブ男
-違うさ、///キャラ名[p]
+違うさ、[emb exp=sf.yourname][p]
+
+[chara_hide_all]
+
+;1人目のキャラクター登場
+[chara_new name="モブ男" storage="chara/モブ男/ノーマル左向き.png" jname="モブ男"]
+[chara_show name="モブ男"]
+
+;2人目のキャラ登場
+[chara_new name="あなた" storage="chara/あなた/ノーマル左向き.png" jname="あなた"]
+[chara_show name="あなた"]
+
+[chara_config talk_anim=up] 
 #あなた
 え、Ｂ子！？[p]
-#Ｂ子
+
+
+;3人目のキャラ登場
+[chara_new name="B子"  storage="chara/B子/ノーマル.png"  jname="B子"]
+[chara_show name="B子"]
+
+
+
+[chara_config talk_anim=none] 
+#B子
 ごめんなさい、盗み見るようなマネをして。[p]
+
 #あなた
 どうしてこんな所に。[p]
-#Ｂ子
+#B子
 モブ男くんが１６時にここに来るようにって。私、びっくりして。[p]
 #あなた
 モブ男・・・。[p]
 #モブ男
 ほらいけよ。[p]
 #あなた
-Ｂ子、オレ・・・[p]
-#Ｂ子
-///キャラ名・・・[p]
+B子、オレ・・・[p]
+#B子
+[emb exp=sf.yourname]・・・[p]
 #あなた
-Ｂ子のことが好きだーー！！[p]
-#伊集院栄子！！
+B子のことが好きだーー！！[p]
+
+;4人目のキャラクター登場
+[chara_new name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png"  jname="伊集院栄子"]
+[chara_show name="伊集院栄子"]
+
+#伊集院栄子
 ちょっと待ったー！！[p]
-///キャラ表示　伊集院栄子
+[emb exp=sf.yourname]　[p]
+
 #あなた
 伊集院栄子！！[p]
+
+[chara_config talk_anim=up] 
 #伊集院栄子
-私、///キャラ名のことが好き！[p]
+私、[emb exp=sf.yourname]のことが好き！[p]
+
+[chara_config talk_anim=none] 
 #モブ男
 お前、どうすんだよ[p]
 #あなた
 オレは・・・[p]
 #あなた
 少し考えさせてくれ。[p]
-#伊集院栄子・Ｂ子
+
+[chara_config talk_anim=up] 
+#伊集院栄子・B子
 優柔不断な人は嫌い！[p]
+[chara_config talk_anim=none] 
 #あなた
 推しの髪型と女の子の機嫌はすぐに変わるってか。とほほ・・・・[p]
 
