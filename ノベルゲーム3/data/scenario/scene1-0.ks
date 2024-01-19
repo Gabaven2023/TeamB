@@ -124,7 +124,6 @@
 ;キャラ表示4名分
 ;1人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"  jname="伊集院栄子"]
 [chara_show name="伊集院栄子"]
 
 #
@@ -132,7 +131,6 @@
 
 ;2人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="B子"  storage="chara/B子/ノーマル.png"  jname="B子"]
 [chara_show name="B子"]
 
 #
@@ -140,7 +138,6 @@
 
 ;3人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="モブ男" storage="chara/モブ男/ノーマル左向き.png" jname="モブ男"]
 [chara_show name="モブ男"]
 
 #
@@ -148,7 +145,6 @@
 
 ;4人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="あなた" storage="chara/あなた/ノーマル.png" jname="あなた"]
 [chara_show name="あなた"]
 
 #あなた
@@ -177,7 +173,7 @@
 なんだ？[p]
 
 ;キャラクター登場
-[chara_show  name="伊集院栄子"  ]
+[chara_show  name="伊集院栄子" face="上半身"]
 
 #伊集院栄子
 私だって馬鹿じゃないのよ。あなたの目を見れば分かるわ。[p]

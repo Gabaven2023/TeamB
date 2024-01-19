@@ -93,9 +93,14 @@
 
 
 
-[chara_config talk_anim=none] 				
+[chara_config talk_anim=none] 
+
+[chara_hide name="伊集院栄子"]
+
 ;キャラクター登場
-[chara_show  name="B子"  ]
+[chara_show  name="伊集院栄子" zindex="2" face="上半身左向き" ]
+;キャラクター登場
+[chara_show  name="B子" face="上半身" ]
 
 
 

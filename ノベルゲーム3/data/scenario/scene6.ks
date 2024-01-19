@@ -108,12 +108,10 @@
 [chara_hide_all]
 
 ;1人目のキャラクター登場
-[chara_new name="モブ男" storage="chara/モブ男/ノーマル左向き.png" jname="モブ男"]
-[chara_show name="モブ男"]
+[chara_show name="モブ男" zindex="2" face="上半身左向き"]
 
 ;2人目のキャラ登場
-[chara_new name="あなた" storage="chara/あなた/ノーマル左向き.png" jname="あなた"]
-[chara_show name="あなた"]
+[chara_show name="あなた" zindex="2" face="上半身左向き"]
 
 [chara_config talk_anim=up] 
 #あなた
@@ -121,8 +119,7 @@
 
 
 ;3人目のキャラ登場
-[chara_new name="B子"  storage="chara/B子/ノーマル.png"  jname="B子"]
-[chara_show name="B子"]
+[chara_show name="B子" face="上半身"]
 
 
 
@@ -146,8 +143,7 @@ B子、オレ・・・[p]
 B子のことが好きだーー！！[p]
 
 ;4人目のキャラクター登場
-[chara_new name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png"  jname="伊集院栄子"]
-[chara_show name="伊集院栄子"]
+[chara_show name="伊集院栄子" zindex="2" face="上半身"]
 
 #伊集院栄子
 ちょっと待ったー！！[p]
