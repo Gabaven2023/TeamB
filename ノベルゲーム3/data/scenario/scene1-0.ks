@@ -74,10 +74,10 @@
 
 *show_input_yourname
 
-[edit left=500 top=150 name="sf.yourname"][r]
+[edit left=550 top=150 name="sf.yourname"][r]
 
-[locate x=500 y=200]
-[button target="*sbm_name" name=button_name_kettei graphic="kettei.gif" ]
+[locate x=575 y=225]
+[button target="*sbm_name" name=button_name_kettei graphic="決定1.png" ]
 
 [s]
 
