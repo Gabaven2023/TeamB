@@ -87,7 +87,7 @@
 
 ;名前が未入力の場合
 [if exp="sf.yourname==''"]
-    名前が未入力です?[l]
+    名前が未入力です。[l]
     @jump target=*show_input_yourname
 [endif]
 
