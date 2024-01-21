@@ -139,7 +139,7 @@
 [bg storage=バトル.png time=2000] 
 
 #
-白熱電球から電球型LEDランプに変えることによって、電力消費量を何％削減することができるでしょうか。[p]
+白熱電球から電球型LEDランプに変えることによって、電力消費量を何％削減することができるでしょう？[p]
 
 [glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="150"  text="①80%強"  target="*selectinterest6"  ]
 [glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="250"  text="②50%程度"  target="*selectinterest7"  ]
