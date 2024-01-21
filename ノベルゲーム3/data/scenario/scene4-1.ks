@@ -92,7 +92,7 @@
 
 
 #
-家庭部門のCO2排出構成として、正しいものはどれでしょうか。[p]
+家庭部門のCO2排出構成として、正しいものはどれでしょうか。
 
 [glink  color="black"  storage="scene5-1.ks"  size="28"  x="360"  width="500"  y="150"  text="①冷房のために排出されるCO2が全体の約１／４"  target="*selectinterest5-1"  ]
 [glink  color="black"  storage="scene5-2.ks"  size="28"  x="360"  width="500"  y="250"  text="②暖房のために排出されるCO2が全体の約１／４"  target="*selectinterest5-2"  ]
