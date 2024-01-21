@@ -39,29 +39,32 @@
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
-
+*selectinterest5-4
 [cm]
 
 
+
 #モブ男	
-正解だ！！		
+正解だ！！[p]		
 #あなた	
-よっしゃー！おめでとう。		
-#モブ男	
-聞いてくれ。おれは、本当はＢ子のことが好きなんだ。		
+よっしゃー！[p]		
+#モブ男
+おめでとう。[p]		
+聞いてくれ。おれは、本当はＢ子のことが好きなんだ。[p]		
 #あなた	
-・・・そうだったのかー！！		
+・・・そうだったのかー！！[p]		
 #モブ男	
-だから次はオレもとっておきの問題をだす。		
+だから次はオレもとっておきの問題をだす。[p]		
 #あなた	
-おう！本気でかかってこい！		
+おう！本気でかかってこい！[p]		
 #モブ男	
-いくぞ！		
+いくぞ！[p]		
 #モブ男	
-いま、世界では森林が減っている。〇か×か？
+再生可能エネルギーに分類されるものはどれでしょうか。
 
 
-[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="×"  target="*selectinterest7"  ]
-[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="〇"  target="*selectinterest6"  ]
+[glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="プラスチック廃棄物の焼却熱を利用した廃棄物発電"  target="*selectinterest7"  ]
+[glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="大規模ダムを利用した水力発電"  target="*selectinterest6"  ]
 
 
+[s]
