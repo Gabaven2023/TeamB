@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="背景時計.jpg" time="100"]
+[bg storage="バトル.png" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -65,41 +65,60 @@
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
 
-
+*selectinterest5-2
 
 ;背景画像の切り替え実行
-[bg storage=絵が挿入できる背景.jpg time=2000] 
+[bg storage=部屋.png time=2000] 
 
 #モブ男
-またも正解だ。
+またも正解だ。[p]
+
 #あなた
-・・・
+・・・[p]
+
 #あなた
-・・・モブ男。
+・・・モブ男。[p]
+
 #モブ男
-どうしたんだよ。
+どうしたんだよ。[p]
 #あなた
-オレ、B子に告白しようと思う。
+オレ、B子に告白しようと思う。[p]
+
+[chara_config talk_anim=up]
 #モブ男
-え！？
+え！？[p]
+
+[chara_config talk_anim=none]
 #あなた
-モブ男のおかげでオレ自信がついたよ。
-環境のクイズに正解してきた今のオレなら、Ｂ子に告白できる。
+モブ男のおかげでオレ自信がついたよ。[p]
+環境のクイズに正解してきた今のオレなら、Ｂ子に告白できる。[p]
+
 #モブ男
-・・・
-#モブ男
-そうか。
-#モブ男
-。。。オレ実は。
+・・・[p]
+そうか。[p]
+。。。オレ実は。[p]
+
 #あなた
-だから最後にひとつ、オレにクイズを出してくれないか。
+だから最後にひとつ、オレにクイズを出してくれないか。[p]
+
+[chara_config talk_anim=up]
 #モブ男
-。。。分かった。クイズだ！
+。。。分かった。クイズだ！[p]
+
+#
+
+;背景画像の切り替え実行
+[bg storage=バトル.png time=2000] 
+
+
+[chara_config talk_anim=none]
+
 #モブ男
-地球温暖化が進むと、陸地が増えて水が減る？
+地球温暖化が進むと、陸地が増えて水が減ると思う？
 
 
 [glink  color="black"  storage="scene7.ks"  size="28"  x="360"  width="500"  y="150"  text="○"  target="*selectinterest7"  ]
 [glink  color="black"  storage="scene6.ks"  size="28"  x="360"  width="500"  y="250"  text="×"  target="*selectinterest6"  ]
 
+[s]
 
