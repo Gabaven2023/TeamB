@@ -36,21 +36,35 @@
 [chara_new  name="伊集院栄子"  storage="chara/伊集院栄子/ノーマル.png" jname="伊集院栄子" ]
 ;キャラクターの表情登録
 [chara_face name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"]
+[chara_face name="伊集院栄子" face="上半身" storage="chara/伊集院栄子/ノーマル上半身.png"]
+[chara_face name="伊集院栄子" face="上半身左向き" storage="chara/伊集院栄子/ノーマル上半身左向き.png"]
+[chara_face name="伊集院栄子" face="神妙な表情" storage="chara/伊集院栄子/神妙な表情.png"]
 
 ;B子
 [chara_new  name="B子"  storage="chara/B子/ノーマル.png" jname="B子" ]
 ;キャラクターの表情登録
 [chara_face name="B子" face="左向き" storage="chara/B子/ノーマル左向き.png"]
+[chara_face name="B子" face="上半身" storage="chara/B子/ノーマル上半身.png"]
+[chara_face name="B子" face="上半身左向き" storage="chara/B子/ノーマル上半身左向き.png"]
+[chara_face name="B子" face="心配顔" storage="chara/B子/心配顔.png"]
+
 
 ;モブ男
 [chara_new  name="モブ男"  storage="chara/モブ男/ノーマル.png" jname="モブ男" ]
 ;キャラクターの表情登録
 [chara_face name="モブ男" face="左向き" storage="chara/モブ男/ノーマル左向き.png"]
+[chara_face name="モブ男" face="上半身" storage="chara/モブ男/ノーマル上半身.png"]
+[chara_face name="モブ男" face="上半身左向き" storage="chara/モブ男/ノーマル上半身左向き.png"]
+[chara_face name="モブ男" face="煽り顔" storage="chara/モブ男/煽り顔.png"]
 
 ;あなた
 [chara_new  name="あなた"  storage="chara/あなた/ノーマル.png" jname="あなた" ]
 ;キャラクターの表情登録
 [chara_face name="あなた" face="左向き" storage="chara/あなた/ノーマル左向き.png"]
+[chara_face name="あなた" face="上半身" storage="chara/あなた/ノーマル上半身.png"]
+[chara_face name="あなた" face="上半身左向き" storage="chara/あなた/ノーマル上半身左向き.png"]
+[chara_face name="あなた" face="燃える顔" storage="chara/あなた/燃える顔.png"]
+
 
 
 
@@ -73,7 +87,7 @@
 
 ;名前が未入力の場合
 [if exp="sf.yourname==''"]
-    名前が未入力です?[l]
+    名前が未入力です。[l]
     @jump target=*show_input_yourname
 [endif]
 
@@ -110,7 +124,6 @@
 ;キャラ表示4名分
 ;1人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="伊集院栄子" face="左向き" storage="chara/伊集院栄子/ノーマル左向き.png"  jname="伊集院栄子"]
 [chara_show name="伊集院栄子"]
 
 #
@@ -118,7 +131,6 @@
 
 ;2人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="B子"  storage="chara/B子/ノーマル.png"  jname="B子"]
 [chara_show name="B子"]
 
 #
@@ -126,7 +138,6 @@
 
 ;3人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="モブ男" storage="chara/モブ男/ノーマル左向き.png" jname="モブ男"]
 [chara_show name="モブ男"]
 
 #
@@ -134,7 +145,6 @@
 
 ;4人目のキャラクター登場
 [chara_config talk_anim=none] 
-[chara_new name="あなた" storage="chara/あなた/ノーマル.png" jname="あなた"]
 [chara_show name="あなた"]
 
 #あなた
@@ -163,7 +173,7 @@
 なんだ？[p]
 
 ;キャラクター登場
-[chara_show  name="伊集院栄子"  ]
+[chara_show  name="伊集院栄子" face="上半身"]
 
 #伊集院栄子
 私だって馬鹿じゃないのよ。あなたの目を見れば分かるわ。[p]
