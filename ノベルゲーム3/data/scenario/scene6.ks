@@ -75,8 +75,7 @@
 #モブ男
 ・・・正解だ。[p]
 
-; [kanim] countパラメータを指定した例。
-[kanim name=あなた keyframe=my_anim2 time=700 count=3]
+
 ; [keyframe]～[endkeyframe] キーフレームアニメーション my_anim2 を定義します。
 [keyframe name=my_anim2]
 ; [frame] アニメーション25%完了時には右に1px動いている……ということを定義します。
