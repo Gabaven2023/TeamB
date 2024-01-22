@@ -7,7 +7,7 @@
 [start_keyconfig]
 
 
-[bg storage="絵が挿入できる背景.jpg" time="100"]
+[bg storage="バトル.jpg" time="100"]
 
 ;メニューボタンの表示
 @showmenubutton
@@ -68,6 +68,8 @@
 *selectinterest7
 
 [cm]
+[bg storage=夕焼け.png time=2000] 
+
 #あなた
 頼む・・・！[p]
 #モブ男
@@ -76,17 +78,16 @@
 残念だよ。[p]
 
 ;キャラクター登場
-[chara_show  name="B子"  ]
+[chara_show  name="B子" face="上半身" ]
 
-[chara_mod name="あなた" face="左向き"]
+[chara_mod name="あなた" face="上半身左向き"]
 
 #あなた
 B子！どうしてここに。[p]
 #モブ男
-
 B子。[p]
-#Ｂ子
 
+#B子
 モブ男きゅん！[p]
 #あなた
 き、きゅ、きゅん・・・？[p]
