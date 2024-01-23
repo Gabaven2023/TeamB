@@ -65,6 +65,8 @@
 ; [chara_config] 強調表現を「ブライトネス」指定、表情の記憶機能を「有効」、表情切り替え時間を「０」に。
 [chara_config talk_focus="brightness" memory="true" time="0"]
 
+*selectinterest2-2
+
 [cm]
 
 #
