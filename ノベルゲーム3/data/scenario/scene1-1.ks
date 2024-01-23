@@ -156,7 +156,8 @@
 
 日本で1年間に廃棄される食品ロスの量はどれくらいでしょう？？
 
-[link storage="scene2-1.ks"]【１】300万トン[endlink][r]
-[link storage="scene2-2.ks"]【２】600万トン[endlink][r]
+[glink  color="black"  storage="scene2-1.ks"  size="28"  x="360"  width="500"  y="150"  text="300万トン"  target="*selectinterest2-1"  ]
+[glink  color="black"  storage="scene2-2.ks"  size="28"  x="360"  width="500"  y="250"  text="600万トン"  target="*selectinterest2-2"  ]
+
 [s]
 
